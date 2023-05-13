@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование ниформационных систем</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Тестирование информационных систем</h1>
+        <nav>
+            <div class="menu">
+                <a href="login.html">Войти</a>
+                <a href="register.html">Регистрация</a>
+            </div>
+            <div class="user_info">
+                <img class="user_icon" src="images/user.png" alt="">
+                <div>
+                    <p class="user_login">N1ceK1d</p>
+                    <p class="user_mail">retr0raven666@gmail.com</p>
+                    <button class="exit">Выйти</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="works_block">
+            <h2>Работы</h2>
+            <div>
+                <form class="works_form">
+                    <input required="true" placeholder="Название" type="text" class="work_title_in">
+                    <input required="true" name="file" type="file" id="work_file">
+                    <button class="load_work" type="button">Загрузить</button>
+                </form>
+                <div class="works_list">
+                </div>
+            </div>
+        </div>
+        <div class="var_gen">
+            <h2>Генератор вариантов</h2>
+            <input type="text" class='variant_counter' placeholder="Количество вариантов">
+            <button class="get_variant">Сгенерировать</button>
+            <p class="variant">Ваш вариант: </p>
+        </div>
+        <div>
+            <h2>Комментарии</h2>
+            <div>
+                <div class="comment_list">
+                </div>
+                <div class="create_comment">
+                    <input type="text" class="com_title">
+                    <textarea cols="30" rows="10" class="com_text"></textarea>
+                    <button class="send_comment" type="button">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Copyright by is2-24-falaleevna
+    </footer>
+    <script src="js/generateVariant.js"></script>
+    <script src="script.js"></script>
+    <script src="js/comments.js"></script>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/works.js"></script>
+</body>
+</html>
